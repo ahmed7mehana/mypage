@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+    --primaryColor:#ff274b;
+    --secondaryColor:#f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1:#171a1c;
+    --bgColor-2:#22282a;
+    --padding:8%;
+} 
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+
+header {
+    background-color: #22282a;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 77px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #ff274b;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+
+.navigation a{
+    color: #ff274b;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    /* padding-left: 0PX; */
+    margin-left: 10PX;
+    /* align-content: center; */
+}
+
+.navigation a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+                border-radius: 50%;
+
+     border-bottom: 3px solid red;
+            }
+
+section {
+    padding: 100px 80px;
+    background:rgb(51, 49, 49);
+}
+
+
+
+
+
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:#171a1c ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main h2 {
+    COLOR: #f7bcf7;
+    font-family: monospace;
+    font-size: 2em;
+    z-index: 300;
+}
+
+
+.main span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff274b;
+    font-size: 3em;
+    font-weight: 600;
+    animation: none;
+
+}
+
+.main h3{
+    COLOR: aliceblue;
+    width: 24.1ch;
+    animation: typing 2.5s steps(100), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid red;
+    font-family: monospace;
+    font-size: 2em;
+    margin-bottom: 8PX;}
+  
+  @keyframes typing {
+    from {
+      width: 0%
+    }
+  }
+      
+  @keyframes blink {
+     20% {
+      border-color: transparent
+    }
+  }
+
+  .main .image{}
+
+ .main .image img{
+    WIDTH: 402PX;
+ }
+ @media (max-width:900px){
+    .main .image img{
+        WIDTH: 0PX;
+    }
+
+ }
+
+ .main .main-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 42px;
+    margin: 42px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+.main .main-btn:hover{
+    background: #ff274b;
+    color: #050801;
+    box-shadow: 0 0 5px #ff274b,
+                0 0 25px #ff274b,
+                0 0 50px #ff274b,
+                0 0 200px #ff274b;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.main .main-btn:nth-child(1){
+    filter: hue-rotate(27deg);
+}
+.main-btn:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.main .main-btn span{
+    position: absolute;
+    display: block;
+}
+.main .main-btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ff274b);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.main .main-btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ff274b);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.main .main-btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ff274b);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.main .main-btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ff274b);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+
+.main .icon a{
+    color: #fff;
+    font-size: 19PX;
+    PADDING: 7PX;
+    margin-left: 10PX;
+}
+.main .icon a:hover{
+    background: #6eda4d;
+    color: #ff0606;
+    box-shadow: 0 0 5px #6eda4d,
+                0 0 25px #6eda4d,
+                0 0 50px #6eda4d,
+                0 0 200px #6eda4d;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.main .icon a:hover:nth-child(1){
+    color: #154cff;
+}
+.main .icon a:hover:nth-child(2){
+    color: #154cff;
+}
+
+
+
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--primaryColor);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color:var(--bgColor-1);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(214, 6, 6, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color:var(--primaryColor);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: #73777b;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: var(--bgColor-1);
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: var(--bgColor-2);
+    border: 1px solid rgb(228, 11, 11);
+    min-height: -27em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 7px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: rgb(131, 14, 14);
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color:var(--primaryColor);
+}
+
+.more-details:hover {
+    color: var(--secondaryColor);
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1.5em;
+}
+.contact .info .email{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    
+}
+
+.footer {
+    background-color: var(--bgColor-1);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        font-size: 10PX;
+    }
+    .logo{
+        font-size: 17PX;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:320px){
+    body{
+        font-size: 7px;
+    }
+    .navigation a{
+        font-size: inherit;
+    }
+
+}

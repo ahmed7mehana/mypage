@@ -316,6 +316,9 @@ section {
     font-weight: 700;
     margin: 10px;
 }
+.info P{
+    color:#6a0a0a;
+}
 
 .projects {
     background-color: var(--bgColor-1);
@@ -388,8 +391,7 @@ section {
 .contact .info .email{
     text-decoration: none;
     font-size: 1.2em;
-    color: rgb(0, 0, 0);
-    
+      color: #6a0a0a;
 }
 
 .footer {
